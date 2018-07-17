@@ -1,0 +1,41 @@
+{
+  "name": "@zipavlin/vue-clip-tool",
+  "version": "1.0.0",
+  "description": "Clip/mask component for Vue framework",
+  "main": "./dist/ClipTool.common.js",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name ClipTool ./src/ClipTool.vue",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zipavlin/vue-clip-tool.git"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "keywords": [
+    "js",
+    "vue",
+    "component",
+    "clip",
+    "mask",
+    "clip-path",
+    "tool"
+  ],
+  "author": "Žiga Pavlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zipavlin/vue-clip-tool/issues"
+  },
+  "homepage": "https://github.com/zipavlin/vue-clip-tool#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "webpack": "^4.16.0"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  }
+}

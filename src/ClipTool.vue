@@ -226,7 +226,6 @@
                     const index = e.target.attributes.index.value;
                     const x = this.points[index][0] + e.srcEvent.movementX;
                     const y = this.points[index][1] + e.srcEvent.movementY;
-                    this.points.splice(index, 1, [x, y]);
                     if (this.mOptions.limitToParent) {
                         if (x > (this.mOptions.strokeWidth * 2) && x < this.width - (this.mOptions.strokeWidth * 2) && y > (this.mOptions.strokeWidth * 2) && y < this.height - (this.mOptions.strokeWidth * 2)) {
                             this.points.splice(index, 1, [x, y]);

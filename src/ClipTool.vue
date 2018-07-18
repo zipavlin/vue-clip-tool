@@ -169,7 +169,7 @@
                                 const prevPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][1] - pointOnLine[1]), 2));
                                 const nextPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][1] - pointOnLine[1]), 2));
                                 if (prevPointDistance >= this.mOptions.minPointDistance && nextPointDistance >= this.mOptions.minPointDistance) {
-                                    this.points.splice(i, 0, pointOnLine);
+                                    this.points.splice(i, 0, pointOnLine.map(x => Math.round(x)));
                                     this.endEdit();
                                 }
                                 break;
@@ -196,7 +196,7 @@
                                 left = lastPoint[0];
                             }
                         }
-                        this.points.push([left, top]);
+                        this.points.push([left, top].map(x => Math.round(x)));
                         this.endEdit();
                     }
                 }

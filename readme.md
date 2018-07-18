@@ -82,6 +82,7 @@ Type __Object__
 | pointTitle        | null          | point title attribute                                 |
 | confirmText       | null          | confirm popup text when removing point                |
 | minPointDistance  | 10            | minimum distance between points when adding a new one |
+| limitToParent     | true          | limit point move to be inside parent                  |
 
 ## Events
 

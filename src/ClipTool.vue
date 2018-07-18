@@ -8,6 +8,10 @@
             <circle class="clip-tool-point-outline" :data-selected="i === selectedPoint" :index="i" :cx="point[0]" :cy="point[1]" :r="mOptions.strokeArea / 2" stroke="none" fill="transparent"><title v-if="mOptions.pointTitle">{{mOptions.pointTitle}}</title></circle>
             <circle class="clip-tool-point-display" :cx="point[0]" :cy="point[1]" :r="mOptions.strokeWidth" stroke="none" :fill="mOptions.stroke"></circle>
         </g>
+        <g v-if="mOptions.blankText && points.length === 0">
+            <text  class="clip-tool-text" text-anchor="middle" :x="width / 2" :y="height / 2" dy="7" stroke="white" stroke-width="4" :fill="mOptions.stroke">{{mOptions.blankText}}</text>
+            <text  class="clip-tool-text" text-anchor="middle" :x="width / 2" :y="height / 2" dy="7" stroke="none" :fill="mOptions.stroke">{{mOptions.blankText}}</text>
+        </g>
     </svg>
 </template>
 
@@ -115,7 +119,8 @@
                     pointTitle: null,
                     confirmText: null,
                     minPointDistance: 10,
-                    limitToParent: true
+                    limitToParent: true,
+                    blankText: 'Click to add a point',
                 }, this.options);
             },
             viewbox() {
@@ -319,15 +324,22 @@
         top: 0;
         left: 0;
         // path
-        .clip-tool-path-display {
+        &-path-display {
             pointer-events: none;
             opacity: $opacity-hard;
             transition: opacity $duration;
         }
         // point
-        .clip-tool-point-display {
+        &-point-display {
             pointer-events: none;
             transition: r $duration, opacity $duration;
+        }
+        // blank text
+        &-text {
+            font-weight: bold;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            pointer-events: none;
         }
 
         // action

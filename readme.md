@@ -73,16 +73,17 @@ Component supports binding with __v-model__ or __:value__ + __@input__ combinati
 ### Options
 Type __Object__
 
-| option            | default       | description                                           |
-| ----------------- |:-------------:| -----------------------------------------------------:|
-| stroke            | '#00C2FF'     | stroke color                                          |
-| strokeWidth       | 2             | stroke width and point radius (in px)                 |
-| strokeArea        | 20            | stroke and point's pointer event area                 |
-| pathTitle         | null          | path title attribute                                  |
-| pointTitle        | null          | point title attribute                                 |
-| confirmText       | null          | confirm popup text when removing point                |
-| minPointDistance  | 10            | minimum distance between points when adding a new one |
-| limitToParent     | true          | limit point move to be inside parent                  |
+| option            | default                   | description                                           |
+| ----------------- |:-------------------------:| -----------------------------------------------------:|
+| stroke            | '#00C2FF'                 | stroke color                                          |
+| strokeWidth       | 2                         | stroke width and point radius (in px)                 |
+| strokeArea        | 20                        | stroke and point's pointer event area                 |
+| pathTitle         | null                      | path title attribute                                  |
+| pointTitle        | null                      | point title attribute                                 |
+| confirmText       | null                      | confirm popup text when removing point                |
+| blankText         | 'Click to add a point'    | Display text if there are no point yet                |
+| minPointDistance  | 10                        | minimum distance between points when adding a new one |
+| limitToParent     | true                      | limit point move to be inside parent                  |
 
 ## Events
 

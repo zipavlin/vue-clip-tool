@@ -96,17 +96,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
-/***/ "0Bdt":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_14679d2b_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("xeVc");
-/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_14679d2b_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_14679d2b_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_14679d2b_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "CkCH":
 /***/ (function(module, exports) {
 
@@ -453,6 +442,21 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
+/***/ "V0NT":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("p2xG");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("JgEj").default
+var update = add("63ecd3f8", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ "lvnC":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -468,6 +472,21 @@ if (typeof window !== 'undefined') {
 
 /***/ }),
 
+/***/ "p2xG":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("CkCH")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.clip-tool[data-v-6bcd275c] {\n  position: absolute;\n  display: block;\n  top: 0;\n  left: 0;\n}\n.clip-tool-path-display[data-v-6bcd275c] {\n    pointer-events: none;\n    opacity: 0.8;\n    transition: opacity 0.25s;\n}\n.clip-tool-point-display[data-v-6bcd275c] {\n    pointer-events: none;\n    transition: r 0.25s, opacity 0.25s;\n}\n.clip-tool-text[data-v-6bcd275c] {\n    font-weight: bold;\n    stroke-linecap: butt;\n    stroke-linejoin: miter;\n    pointer-events: none;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline[data-v-6bcd275c] {\n    cursor: move;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline:hover + .clip-tool-point-display[data-v-6bcd275c] {\n      r: 6px;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-path-outline[data-v-6bcd275c] {\n    cursor: copy;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-point-display[data-v-6bcd275c] {\n    r: 3px;\n}\n.clip-tool[data-action=\"point\"] .clip-tool-path-display[data-v-6bcd275c] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.4;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-path-display[data-v-6bcd275c] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.2;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline[data-selected=\"true\"] + .clip-tool-point-display[data-v-6bcd275c] {\n    r: 6px;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline:not([data-selected=\"true\"]) + .clip-tool-point-display[data-v-6bcd275c] {\n    opacity: 0.4;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "tFh3":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -477,18 +496,22 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: /usr/local/lib/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 var setPublicPath = __webpack_require__("lvnC");
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/Users/zigap/Sites/vue-clip-tool/node_modules/.cache/vue-loader","cacheIdentifier":"f10f311e-vue-loader-template"}!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=template&id=14679d2b&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"clip-tool",attrs:{"width":_vm.width || '100%',"height":_vm.height || '100%',"viewBox":_vm.viewbox,"data-action":_vm.action},on:{"click":_vm.addPoint,"contextmenu":_vm.onContextMenu}},[(_vm.points.length > 0)?_c('polygon',{ref:"pathOutline",staticClass:"clip-tool-path-outline",attrs:{"points":_vm.path,"stroke":"transparent","stroke-width":_vm.mOptions.strokeArea,"fill":"none"},on:{"mouseenter":_vm.setPathHover,"mouseleave":_vm.setPathNormal}},[(_vm.mOptions.pathTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pathTitle))]):_vm._e()]):_vm._e(),(_vm.points.length > 0)?_c('polygon',{ref:"pathDisplay",staticClass:"clip-tool-path-display",attrs:{"points":_vm.path,"stroke":_vm.mOptions.stroke,"stroke-width":_vm.mOptions.strokeWidth,"fill":"none"}}):_vm._e(),_vm._l((_vm.points),function(point,i){return _c('g',{key:i,staticClass:"clip-tool-point"},[_c('circle',{staticClass:"clip-tool-point-outline",attrs:{"data-selected":i === _vm.selectedPoint,"index":i,"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeArea / 2,"stroke":"none","fill":"transparent"}},[(_vm.mOptions.pointTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pointTitle))]):_vm._e()]),_c('circle',{staticClass:"clip-tool-point-display",attrs:{"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeWidth,"stroke":"none","fill":_vm.mOptions.stroke}})])})],2)}
+// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/Users/zigap/Sites/vue-clip-tool/node_modules/.cache/vue-loader","cacheIdentifier":"f10f311e-vue-loader-template"}!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=template&id=6bcd275c&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"clip-tool",attrs:{"width":_vm.width || '100%',"height":_vm.height || '100%',"viewBox":_vm.viewbox,"data-action":_vm.action},on:{"click":_vm.addPoint,"contextmenu":_vm.onContextMenu}},[(_vm.points.length > 0)?_c('polygon',{ref:"pathOutline",staticClass:"clip-tool-path-outline",attrs:{"points":_vm.path,"stroke":"transparent","stroke-width":_vm.mOptions.strokeArea,"fill":"none"},on:{"mouseenter":_vm.setPathHover,"mouseleave":_vm.setPathNormal}},[(_vm.mOptions.pathTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pathTitle))]):_vm._e()]):_vm._e(),(_vm.points.length > 0)?_c('polygon',{ref:"pathDisplay",staticClass:"clip-tool-path-display",attrs:{"points":_vm.path,"stroke":_vm.mOptions.stroke,"stroke-width":_vm.mOptions.strokeWidth,"fill":"none"}}):_vm._e(),_vm._l((_vm.points),function(point,i){return _c('g',{key:i,staticClass:"clip-tool-point"},[_c('circle',{staticClass:"clip-tool-point-outline",attrs:{"data-selected":i === _vm.selectedPoint,"index":i,"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeArea / 2,"stroke":"none","fill":"transparent"}},[(_vm.mOptions.pointTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pointTitle))]):_vm._e()]),_c('circle',{staticClass:"clip-tool-point-display",attrs:{"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeWidth,"stroke":"none","fill":_vm.mOptions.stroke}})])}),(_vm.mOptions.blankText && _vm.points.length === 0)?_c('g',[_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"white","stroke-width":"4","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))]),_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"none","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))])]):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=template&id=14679d2b&scoped=true&
+// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=template&id=6bcd275c&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/hammerjs/hammer.js
 var hammer = __webpack_require__("yLV6");
 var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
 
 // CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=script&lang=js&
+//
+//
+//
+//
 //
 //
 //
@@ -592,6 +615,7 @@ const getClosestPointOnLine = (p, A, B) => {
             action: null,
             points: this.value.slice(0, this.value.length),
             managers: [],
+            pressManager: null,
             isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))
         }
     },
@@ -605,7 +629,9 @@ const getClosestPointOnLine = (p, A, B) => {
                 pathTitle: null,
                 pointTitle: null,
                 confirmText: null,
-                minPointDistance: 10
+                minPointDistance: 10,
+                limitToParent: true,
+                blankText: 'Click to add a point',
             }, this.options);
         },
         viewbox() {
@@ -628,9 +654,18 @@ const getClosestPointOnLine = (p, A, B) => {
                     [hammer_default.a.Press]
                 ]
             });
+            this.pressManager = manager;
             manager.on('press', function (e) {
                 this.onHoverMenu(e.srcEvent);
             }.bind(this));
+        }
+    },
+    beforeDestroy() {
+        // remove listeners from points
+        this.managers.forEach(m => {this.removeListeners(m)});
+        // remove listener for press
+        if (this.pressManager) {
+            this.removeListeners(this.pressManager);
         }
     },
     methods: {
@@ -660,7 +695,7 @@ const getClosestPointOnLine = (p, A, B) => {
                             const prevPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][1] - pointOnLine[1]), 2));
                             const nextPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][1] - pointOnLine[1]), 2));
                             if (prevPointDistance >= this.mOptions.minPointDistance && nextPointDistance >= this.mOptions.minPointDistance) {
-                                this.points.splice(i, 0, pointOnLine);
+                                this.points.splice(i, 0, pointOnLine.map(x => Math.round(x)));
                                 this.endEdit();
                             }
                             break;
@@ -687,7 +722,7 @@ const getClosestPointOnLine = (p, A, B) => {
                             left = lastPoint[0];
                         }
                     }
-                    this.points.push([left, top]);
+                    this.points.push([left, top].map(x => Math.round(x)));
                     this.endEdit();
                 }
             }
@@ -705,6 +740,12 @@ const getClosestPointOnLine = (p, A, B) => {
             manager.on('tap', this.tap);
             this.managers.push(manager);
         },
+        removeListeners(manager) {
+            for (let handler in manager.handlers) {
+                manager.remove(handler);
+            }
+            manager.destroy();
+        },
         panStart() {
             if (!this.selectedPoint) {
                 this.disableAddPoint = true;
@@ -716,7 +757,14 @@ const getClosestPointOnLine = (p, A, B) => {
                 const index = e.target.attributes.index.value;
                 const x = this.points[index][0] + e.srcEvent.movementX;
                 const y = this.points[index][1] + e.srcEvent.movementY;
-                this.points.splice(index, 1, [x, y]);
+                if (this.mOptions.limitToParent) {
+                    if (x > (this.mOptions.strokeWidth * 2) && x < this.width - (this.mOptions.strokeWidth * 2) && y > (this.mOptions.strokeWidth * 2) && y < this.height - (this.mOptions.strokeWidth * 2)) {
+                        this.points.splice(index, 1, [x, y]);
+                    }
+                }
+                else {
+                    this.points.splice(index, 1, [x, y]);
+                }
             }
         },
         panEnd() {
@@ -788,8 +836,8 @@ const getClosestPointOnLine = (p, A, B) => {
 
 // CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_ClipToolvue_type_script_lang_js_ = (ClipToolvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/ClipTool.vue?vue&type=style&index=0&id=14679d2b&scoped=true&lang=scss&
-var ClipToolvue_type_style_index_0_id_14679d2b_scoped_true_lang_scss_ = __webpack_require__("0Bdt");
+// EXTERNAL MODULE: ./src/ClipTool.vue?vue&type=style&index=0&id=6bcd275c&scoped=true&lang=scss&
+var ClipToolvue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss_ = __webpack_require__("y423");
 
 // CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -901,7 +949,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "14679d2b",
+  "6bcd275c",
   null
   
 )
@@ -916,33 +964,14 @@ var component = normalizeComponent(
 
 /***/ }),
 
-/***/ "wv5F":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "y423":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-exports = module.exports = __webpack_require__("CkCH")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.clip-tool[data-v-14679d2b] {\n  position: absolute;\n  display: block;\n  top: 0;\n  left: 0;\n}\n.clip-tool .clip-tool-path-display[data-v-14679d2b] {\n    pointer-events: none;\n    opacity: 0.8;\n    transition: opacity 0.25s;\n}\n.clip-tool .clip-tool-point-display[data-v-14679d2b] {\n    pointer-events: none;\n    transition: r 0.25s, opacity 0.25s;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline[data-v-14679d2b] {\n    cursor: move;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline:hover + .clip-tool-point-display[data-v-14679d2b] {\n      r: 6px;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-path-outline[data-v-14679d2b] {\n    cursor: copy;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-point-display[data-v-14679d2b] {\n    r: 3px;\n}\n.clip-tool[data-action=\"point\"] .clip-tool-path-display[data-v-14679d2b] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.4;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-path-display[data-v-14679d2b] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.2;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline[data-selected=\"true\"] + .clip-tool-point-display[data-v-14679d2b] {\n    r: 6px;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline:not([data-selected=\"true\"]) + .clip-tool-point-display[data-v-14679d2b] {\n    opacity: 0.4;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "xeVc":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("wv5F");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("JgEj").default
-var update = add("f3728912", content, true, {"sourceMap":false,"shadowMode":false});
+"use strict";
+/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("V0NT");
+/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

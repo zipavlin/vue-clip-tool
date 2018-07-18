@@ -1,6 +1,6 @@
 {
   "name": "@zipavlin/vue-clip-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clip/mask component for Vue framework",
   "main": "./dist/ClipTool.common.js",
   "scripts": {

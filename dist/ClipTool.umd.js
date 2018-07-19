@@ -91,101 +91,29 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "tFh3");
+/******/ 	return __webpack_require__(__webpack_require__.s = "dOjU");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "CkCH":
-/***/ (function(module, exports) {
+/***/ "FXKS":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
+"use strict";
+/* harmony import */ var _Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_532375d6_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("Pzx/");
+/* harmony import */ var _Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_532375d6_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_532375d6_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_Users_zigap_AppData_Roaming_npm_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_532375d6_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "JgEj":
+/***/ "KW2F":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-style-loader/lib/listToStyles.js
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-style-loader/lib/listToStyles.js
 /**
  * Translates the list format produced by css-loader into something
  * easier to manipulate.
@@ -214,7 +142,7 @@ function listToStyles (parentId, list) {
   return styles
 }
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-style-loader/lib/addStylesClient.js
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-style-loader/lib/addStylesClient.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addStylesClient; });
 /*
   MIT License http://www.opensource.org/licenses/mit-license.php
@@ -442,28 +370,13 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ "V0NT":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("p2xG");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("JgEj").default
-var update = add("63ecd3f8", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
-/***/ "lvnC":
+/***/ "LajH":
 /***/ (function(module, exports, __webpack_require__) {
 
 // This file is imported into lib/wc client bundles.
 
 if (typeof window !== 'undefined') {
-  var i
+  let i
   if ((i = window.document.currentScript) && (i = i.src.match(/(.+\/)[^/]+\.js$/))) {
     __webpack_require__.p = i[1] // eslint-disable-line
   }
@@ -472,42 +385,126 @@ if (typeof window !== 'undefined') {
 
 /***/ }),
 
-/***/ "p2xG":
+/***/ "Pzx/":
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__("CkCH")(false);
-// imports
+// style-loader: Adds some css to the DOM by adding a <style> tag
 
+// load the styles
+var content = __webpack_require__("sUUI");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("KW2F").default
+var update = add("37592488", content, true, {"sourceMap":false,"shadowMode":false});
 
-// module
-exports.push([module.i, "\n.clip-tool[data-v-6bcd275c] {\n  position: absolute;\n  display: block;\n  top: 0;\n  left: 0;\n}\n.clip-tool-path-display[data-v-6bcd275c] {\n    pointer-events: none;\n    opacity: 0.8;\n    transition: opacity 0.25s;\n}\n.clip-tool-point-display[data-v-6bcd275c] {\n    pointer-events: none;\n    transition: r 0.25s, opacity 0.25s;\n}\n.clip-tool-text[data-v-6bcd275c] {\n    font-weight: bold;\n    stroke-linecap: butt;\n    stroke-linejoin: miter;\n    pointer-events: none;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline[data-v-6bcd275c] {\n    cursor: move;\n}\n.clip-tool:not([data-action=\"delete\"]) .clip-tool-point-outline:hover + .clip-tool-point-display[data-v-6bcd275c] {\n      r: 6px;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-path-outline[data-v-6bcd275c] {\n    cursor: copy;\n}\n.clip-tool[data-action=\"path\"] .clip-tool-point-display[data-v-6bcd275c] {\n    r: 3px;\n}\n.clip-tool[data-action=\"point\"] .clip-tool-path-display[data-v-6bcd275c] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.4;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-path-display[data-v-6bcd275c] {\n    stroke-dasharray: 2px, 2px;\n    opacity: 0.2;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline[data-selected=\"true\"] + .clip-tool-point-display[data-v-6bcd275c] {\n    r: 6px;\n}\n.clip-tool[data-action=\"delete\"] .clip-tool-point-outline:not([data-selected=\"true\"]) + .clip-tool-point-display[data-v-6bcd275c] {\n    opacity: 0.4;\n}\n", ""]);
+/***/ }),
 
-// exports
+/***/ "XgUJ":
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
 
 
 /***/ }),
 
-/***/ "tFh3":
+/***/ "dOjU":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// EXTERNAL MODULE: /usr/local/lib/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
-var setPublicPath = __webpack_require__("lvnC");
+// EXTERNAL MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+var setPublicPath = __webpack_require__("LajH");
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/Users/zigap/Sites/vue-clip-tool/node_modules/.cache/vue-loader","cacheIdentifier":"f10f311e-vue-loader-template"}!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=template&id=6bcd275c&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"clip-tool",attrs:{"width":_vm.width || '100%',"height":_vm.height || '100%',"viewBox":_vm.viewbox,"data-action":_vm.action},on:{"click":_vm.addPoint,"contextmenu":_vm.onContextMenu}},[(_vm.points.length > 0)?_c('polygon',{ref:"pathOutline",staticClass:"clip-tool-path-outline",attrs:{"points":_vm.path,"stroke":"transparent","stroke-width":_vm.mOptions.strokeArea,"fill":"none"},on:{"mouseenter":_vm.setPathHover,"mouseleave":_vm.setPathNormal}},[(_vm.mOptions.pathTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pathTitle))]):_vm._e()]):_vm._e(),(_vm.points.length > 0)?_c('polygon',{ref:"pathDisplay",staticClass:"clip-tool-path-display",attrs:{"points":_vm.path,"stroke":_vm.mOptions.stroke,"stroke-width":_vm.mOptions.strokeWidth,"fill":"none"}}):_vm._e(),_vm._l((_vm.points),function(point,i){return _c('g',{key:i,staticClass:"clip-tool-point"},[_c('circle',{staticClass:"clip-tool-point-outline",attrs:{"data-selected":i === _vm.selectedPoint,"index":i,"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeArea / 2,"stroke":"none","fill":"transparent"}},[(_vm.mOptions.pointTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pointTitle))]):_vm._e()]),_c('circle',{staticClass:"clip-tool-point-display",attrs:{"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeWidth,"stroke":"none","fill":_vm.mOptions.stroke}})])}),(_vm.mOptions.blankText && _vm.points.length === 0)?_c('g',[_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"white","stroke-width":"4","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))]),_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"none","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))])]):_vm._e()],2)}
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"C://server//www//5_PLAYGROUND//vue-clip-tool//node_modules//.cache//vue-loader","cacheIdentifier":"02bea4b2-vue-loader-template"}!C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=template&id=532375d6&scoped=true
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{ref:"svg",staticClass:"clip-tool",attrs:{"width":_vm.width || '100%',"height":_vm.height || '100%',"viewBox":_vm.viewbox,"data-action":_vm.action},on:{"click":_vm.addPoint,"contextmenu":_vm.onContextMenu}},[(_vm.mOptions.canMoveClip)?_c('polygon',{ref:"pathMove",staticClass:"clip-tool-path-move",attrs:{"points":_vm.path,"stroke":"none","fill":"transparent"}}):_vm._e(),(_vm.value.length > 0)?_c('polygon',{ref:"pathOutline",staticClass:"clip-tool-path-outline",attrs:{"points":_vm.path,"stroke":"transparent","stroke-width":_vm.mOptions.strokeArea,"fill":"none"},on:{"mouseenter":_vm.setPathHover,"mouseleave":_vm.setPathNormal}},[(_vm.mOptions.pathTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pathTitle))]):_vm._e()]):_vm._e(),(_vm.value.length > 0)?_c('polygon',{ref:"pathDisplay",staticClass:"clip-tool-path-display",attrs:{"points":_vm.path,"stroke":_vm.mOptions.stroke,"stroke-width":_vm.mOptions.strokeWidth,"fill":"none"}}):_vm._e(),_vm._l((_vm.value),function(point,i){return _c('g',{key:i,staticClass:"clip-tool-point"},[_c('circle',{staticClass:"clip-tool-point-outline",attrs:{"data-selected":i === _vm.selectedPoint,"index":i,"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeArea / 2,"stroke":"none","fill":"transparent"}},[(_vm.mOptions.pointTitle)?_c('title',[_vm._v(_vm._s(_vm.mOptions.pointTitle))]):_vm._e()]),_c('circle',{staticClass:"clip-tool-point-display",attrs:{"cx":point[0],"cy":point[1],"r":_vm.mOptions.strokeWidth,"stroke":"none","fill":_vm.mOptions.stroke}})])}),(_vm.mOptions.blankText && _vm.value.length === 0)?_c('g',[_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"white","stroke-width":"4","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))]),_c('text',{staticClass:"clip-tool-text",attrs:{"text-anchor":"middle","x":_vm.width / 2,"y":_vm.height / 2,"dy":"7","stroke":"none","fill":_vm.mOptions.stroke}},[_vm._v(_vm._s(_vm.mOptions.blankText))])]):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=template&id=6bcd275c&scoped=true&
+// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=template&id=532375d6&scoped=true
 
 // EXTERNAL MODULE: ./node_modules/hammerjs/hammer.js
 var hammer = __webpack_require__("yLV6");
 var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!/usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/ClipTool.vue?vue&type=script&lang=js
+//
 //
 //
 //
@@ -528,9 +525,9 @@ var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
 
 
 
-const getPathLength = (points) => {
-    return points.reduce((sum, a, i) => {
-        const b = i + 1 === points.length ? points[0] : points[i + 1];
+const getPathLength = (value) => {
+    return value.reduce((sum, a, i) => {
+        const b = i + 1 === value.length ? value[0] : value[i + 1];
 
         let dx = Math.abs(b[0] - a[0]),
             dy = Math.abs(b[1] - a[1]),
@@ -591,7 +588,7 @@ const getClosestPointOnLine = (p, A, B) => {
     return [x, y];
 };
 
-/* harmony default export */ var ClipToolvue_type_script_lang_js_ = ({
+/* harmony default export */ var ClipToolvue_type_script_lang_js = ({
     name: "ClipTool",
     props: {
         width: {
@@ -613,9 +610,9 @@ const getClosestPointOnLine = (p, A, B) => {
             selectedPoint: null,
             disableAddPoint: false,
             action: null,
-            points: this.value.slice(0, this.value.length),
             managers: [],
             pressManager: null,
+            dragManager: null,
             isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))
         }
     },
@@ -631,6 +628,7 @@ const getClosestPointOnLine = (p, A, B) => {
                 confirmText: null,
                 minPointDistance: 10,
                 limitToParent: true,
+                canMoveClip: true,
                 blankText: 'Click to add a point',
             }, this.options);
         },
@@ -638,18 +636,20 @@ const getClosestPointOnLine = (p, A, B) => {
             return `0 0 ${this.width} ${this.height}`;
         },
         path() {
-            return this.points.map(x => x.join(',')).join(' ');
+            return this.value.map(x => x.join(',')).join(' ');
         },
         length() {
-            return getPathLength(this.points);
+            return getPathLength(this.value);
         }
     },
     mounted() {
+        // init create move listeners on points
         this.$refs.svg.querySelectorAll('.clip-tool-point-outline').forEach(circle => {
             this.registerEvents(circle);
         });
+        // create listener for mobile right click (press)
         if (this.isMobile) {
-            const manager = new hammer_default.a.Manager(this.$refs.svg, {
+            let manager = new hammer_default.a.Manager(this.$refs.svg, {
                 recognizers: [
                     [hammer_default.a.Press]
                 ]
@@ -659,13 +659,29 @@ const getClosestPointOnLine = (p, A, B) => {
                 this.onHoverMenu(e.srcEvent);
             }.bind(this));
         }
+        // create listener to move whole mask
+        if (this.mOptions.canMoveClip) {
+            let manager = new hammer_default.a.Manager(this.$refs.pathMove, {
+                recognizers: [
+                    [hammer_default.a.Pan]
+                ]
+            });
+            this.pressManager = manager;
+            manager.on('panstart', this.moveClipStart);
+            manager.on('panmove', this.moveClip);
+            manager.on('panend', this.moveClipEnd);
+        }
     },
     beforeDestroy() {
-        // remove listeners from points
+        // remove listeners from value
         this.managers.forEach(m => {this.removeListeners(m)});
         // remove listener for press
         if (this.pressManager) {
             this.removeListeners(this.pressManager);
+        }
+        // remove listener for move
+        if (this.dragManager) {
+            this.removeListeners(this.dragManager);
         }
     },
     methods: {
@@ -676,14 +692,14 @@ const getClosestPointOnLine = (p, A, B) => {
                 let clickPoint = this.$refs.svg.createSVGPoint();
                 clickPoint.x = e.layerX;
                 clickPoint.y = e.layerY;
-                // check if target is polygon -> add new point between existing points
+                // check if target is polygon -> add new point between existing value
                 if (this.$refs.pathOutline && this.$refs.pathOutline.isPointInStroke(clickPoint)) {
                     // make a copy of array length. It goes to infinitive loop if not
-                    const length = Number(this.points.length);
+                    const length = Number(this.value.length);
                     // try all positions of new point. If we have a right one, the length shouldn't change
                     for (let i = 1; i <= length; i++) {
                         // make a deep copy of array
-                        const newPoints = this.points.slice(0, this.points.length);
+                        const newPoints = this.value.slice(0, this.value.length);
                         // add new point
                         newPoints.splice(i, 0, [clickPoint.x, clickPoint.y]);
                         // calculate new length
@@ -691,11 +707,11 @@ const getClosestPointOnLine = (p, A, B) => {
                         // add point to index = i if length didn't change for more than this.
                         if (Math.ceil(newLength) <= Math.ceil(this.length)) {
                             // find closest point on line
-                            const pointOnLine = getClosestPointOnLine([e.layerX, e.layerY], this.points[(i === 0 ? this.points.length : i) - 1], this.points[i === this.points.length ? 0 : i]);
-                            const prevPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[(i === 0 ? this.points.length : 1) - 1][1] - pointOnLine[1]), 2));
-                            const nextPointDistance = Math.sqrt(Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.points[i === this.points.length ? 0 : i][1] - pointOnLine[1]), 2));
+                            const pointOnLine = getClosestPointOnLine([e.layerX, e.layerY], this.value[(i === 0 ? this.value.length : i) - 1], this.value[i === this.value.length ? 0 : i]);
+                            const prevPointDistance = Math.sqrt(Math.pow(Math.abs(this.value[(i === 0 ? this.value.length : 1) - 1][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.value[(i === 0 ? this.value.length : 1) - 1][1] - pointOnLine[1]), 2));
+                            const nextPointDistance = Math.sqrt(Math.pow(Math.abs(this.value[i === this.value.length ? 0 : i][0] - pointOnLine[0]), 2) + Math.pow(Math.abs(this.value[i === this.value.length ? 0 : i][1] - pointOnLine[1]), 2));
                             if (prevPointDistance >= this.mOptions.minPointDistance && nextPointDistance >= this.mOptions.minPointDistance) {
-                                this.points.splice(i, 0, pointOnLine.map(x => Math.round(x)));
+                                this.value.splice(i, 0, pointOnLine.map(x => Math.round(x)));
                                 this.endEdit();
                             }
                             break;
@@ -708,9 +724,9 @@ const getClosestPointOnLine = (p, A, B) => {
                     let left = e.layerX;
                     let top = e.layerY;
                     // if shift key is pressed we assume user wants to put point in straight line
-                    if (e.shiftKey && this.points.length !== 0) {
+                    if (e.shiftKey && this.value.length !== 0) {
                         // get last item value
-                        const lastPoint = this.points.slice(-1)[0];
+                        const lastPoint = this.value.slice(-1)[0];
 
                         // check which diff is smaller
                         const dx = Math.abs(left - lastPoint[0]);
@@ -722,7 +738,7 @@ const getClosestPointOnLine = (p, A, B) => {
                             left = lastPoint[0];
                         }
                     }
-                    this.points.push([left, top].map(x => Math.round(x)));
+                    this.value.push([left, top].map(x => Math.round(x)));
                     this.endEdit();
                 }
             }
@@ -755,15 +771,15 @@ const getClosestPointOnLine = (p, A, B) => {
         panMove(e) {
             if (!this.selectedPoint) {
                 const index = e.target.attributes.index.value;
-                const x = this.points[index][0] + e.srcEvent.movementX;
-                const y = this.points[index][1] + e.srcEvent.movementY;
+                const x = this.value[index][0] + e.srcEvent.movementX;
+                const y = this.value[index][1] + e.srcEvent.movementY;
                 if (this.mOptions.limitToParent) {
                     if (x > (this.mOptions.strokeWidth * 2) && x < this.width - (this.mOptions.strokeWidth * 2) && y > (this.mOptions.strokeWidth * 2) && y < this.height - (this.mOptions.strokeWidth * 2)) {
-                        this.points.splice(index, 1, [x, y]);
+                        this.value.splice(index, 1, [x, y]);
                     }
                 }
                 else {
-                    this.points.splice(index, 1, [x, y]);
+                    this.value.splice(index, 1, [x, y]);
                 }
             }
         },
@@ -790,6 +806,21 @@ const getClosestPointOnLine = (p, A, B) => {
                 window.addEventListener('keydown', this.onKeyDown);
             }
         },
+        moveClipStart() {
+            this.disableAddPoint = true;
+        },
+        moveClip(e) {
+            // recalculate whole array
+            const newPoints = this.value.map(x => {
+                return [x[0] + e.srcEvent.movementX, x[1] + e.srcEvent.movementY];
+            });
+            this.endEdit(newPoints);
+        },
+        moveClipEnd() {
+            setTimeout(function () {
+                this.disableAddPoint = false;
+            }.bind(this), 100);
+        },
         setPathHover() {
             if (!this.action) {
                 this.action = 'path';
@@ -804,7 +835,7 @@ const getClosestPointOnLine = (p, A, B) => {
             if (e.key === 'Backspace' || e.key === 'Delete') {
                 if (this.mOptions.confirmText && !confirm(this.mOptions.confirmText)) return;
                 e.preventDefault();
-                this.points.splice(this.selectedPoint, 1);
+                this.value.splice(this.selectedPoint, 1);
             }
             this.action = null;
             this.selectedPoint = null;
@@ -816,9 +847,9 @@ const getClosestPointOnLine = (p, A, B) => {
                 this.$emit('contextmenu', e);
             }
         },
-        endEdit() {
+        endEdit(newValue) {
             // check if num of point changed
-            if (this.managers.length !== this.points.length) {
+            if (this.managers.length !== this.value.length) {
                 // reset managers
                 setTimeout(function () {
                     this.managers.forEach(manager => manager.destroy());
@@ -828,18 +859,18 @@ const getClosestPointOnLine = (p, A, B) => {
                     });
                 }.bind(this), 100);
             }
-            this.$emit('input', this.points);
+            this.$emit('input', newValue || this.value);
             this.$emit('change');
         }
     }
 });
 
-// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=script&lang=js&
- /* harmony default export */ var src_ClipToolvue_type_script_lang_js_ = (ClipToolvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/ClipTool.vue?vue&type=style&index=0&id=6bcd275c&scoped=true&lang=scss&
-var ClipToolvue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss_ = __webpack_require__("y423");
+// CONCATENATED MODULE: ./src/ClipTool.vue?vue&type=script&lang=js
+ /* harmony default export */ var src_ClipToolvue_type_script_lang_js = (ClipToolvue_type_script_lang_js); 
+// EXTERNAL MODULE: ./src/ClipTool.vue?vue&type=style&index=0&id=532375d6&scoped=true&lang=scss
+var ClipToolvue_type_style_index_0_id_532375d6_scoped_true_lang_scss = __webpack_require__("FXKS");
 
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/node_modules/vue-loader/lib/runtime/componentNormalizer.js
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -944,18 +975,18 @@ function normalizeComponent (
 /* normalize component */
 
 var component = normalizeComponent(
-  src_ClipToolvue_type_script_lang_js_,
+  src_ClipToolvue_type_script_lang_js,
   render,
   staticRenderFns,
   false,
   null,
-  "6bcd275c",
+  "532375d6",
   null
   
 )
 
 /* harmony default export */ var ClipTool = (component.exports);
-// CONCATENATED MODULE: /usr/local/lib/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+// CONCATENATED MODULE: C:/Users/zigap/AppData/Roaming/npm/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (ClipTool);
@@ -964,14 +995,18 @@ var component = normalizeComponent(
 
 /***/ }),
 
-/***/ "y423":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "sUUI":
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("V0NT");
-/* harmony import */ var _usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_usr_local_lib_node_modules_vue_cli_service_node_modules_css_loader_index_js_ref_8_oneOf_1_1_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_2_usr_local_lib_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_0_0_usr_local_lib_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_ClipTool_vue_vue_type_style_index_0_id_6bcd275c_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+exports = module.exports = __webpack_require__("XgUJ")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".clip-tool[data-v-532375d6]{position:absolute;display:block;top:0;left:0}.clip-tool-path-move[data-v-532375d6]{cursor:move}.clip-tool-path-display[data-v-532375d6]{pointer-events:none;opacity:.8;transition:opacity .25s}.clip-tool-point-display[data-v-532375d6]{pointer-events:none;transition:r .25s,opacity .25s}.clip-tool-text[data-v-532375d6]{font-weight:700;stroke-linecap:butt;stroke-linejoin:miter;pointer-events:none}.clip-tool:not([data-action=delete]) .clip-tool-point-outline[data-v-532375d6]{cursor:move}.clip-tool:not([data-action=delete]) .clip-tool-point-outline:hover+.clip-tool-point-display[data-v-532375d6]{r:6px}.clip-tool[data-action=path] .clip-tool-path-outline[data-v-532375d6]{cursor:copy}.clip-tool[data-action=path] .clip-tool-point-display[data-v-532375d6]{r:3px}.clip-tool[data-action=point] .clip-tool-path-display[data-v-532375d6]{stroke-dasharray:2px,2px;opacity:.4}.clip-tool[data-action=delete] .clip-tool-path-display[data-v-532375d6]{stroke-dasharray:2px,2px;opacity:.2}.clip-tool[data-action=delete] .clip-tool-point-outline[data-selected=true]+.clip-tool-point-display[data-v-532375d6]{r:6px}.clip-tool[data-action=delete] .clip-tool-point-outline:not([data-selected=true])+.clip-tool-point-display[data-v-532375d6]{opacity:.4}", ""]);
+
+// exports
+
 
 /***/ }),
 

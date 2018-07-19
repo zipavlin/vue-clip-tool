@@ -17,7 +17,7 @@ npm install @zipavlin/clip-tool
 
 Include component in your Vue app and bind v-model or :value + @input attributes.  
 
-This component is supposed to be used as a tool and will only return array of points that can be used to create css clip-path property for external source component.  
+This component is supposed to be used as a tool and will only return array of points that can be used to create css clip-path property for external source component. Component does not keep internal state/track of points array and it expects to get data from external source (parent component).
   
 The easiest way to use this tool is to bind component's output object to vue style object.
 
@@ -84,6 +84,7 @@ Type __Object__
 | blankText         | 'Click to add a point'    | Display text if there are no point yet                |
 | minPointDistance  | 10                        | minimum distance between points when adding a new one |
 | limitToParent     | true                      | limit point move to be inside parent                  |
+| canMoveClip       | true                      | can user move whole clip                              |
 
 ## Events
 
@@ -98,3 +99,8 @@ Same as __input__ event.
 ### contextmenu
 
 Triggered on right click (mouse) or long touch (touch) on _wrap_ element with event object passed as only parameter.
+
+## TODO
+
+- [ ] add demo page
+- [ ] add image/gif of component
